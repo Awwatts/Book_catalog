@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       MICRO_SERVICE_VERSION: "3.0"
+      
     steps: 
     - name: Checkout sources
       uses: actions/checkout@v2
