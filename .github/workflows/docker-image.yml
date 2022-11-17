@@ -23,7 +23,7 @@ jobs:
         pip install pylint
         cd src
         pylint `ls -R | grep .py$ | xargs`
-
+        
   build-docker:
     runs-on: ubuntu-latest
     env:
