@@ -38,7 +38,7 @@ jobs:
     
     - name: Run server
       run: |
-        docker run --rm -p 9990:9990 -d docker.io/awwatts/books- catalog:${{ env.MICRO_SERVICE_VERSION }}-${GITHUB_RUN_NUMBER}
+        docker run --rm -p 9990:9990 -d docker.io/awwatts/books-catalog:${{ env.MICRO_SERVICE_VERSION }}-${GITHUB_RUN_NUMBER}
         sleep 1
     - name: Simple tests
       run: |
